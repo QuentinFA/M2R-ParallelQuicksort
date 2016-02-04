@@ -2,7 +2,8 @@
 
 ** Experiment 1 : Comparaison between native and docker execution
 
-Note : Docker is a software for "light" virtualization. [More information](https://www.docker.com/what-docker)
+Note : Docker is a software for "light" virtualization. More information : https://www.docker.com/what-docker
+
 For all the following experiments, Docker is used with a standard Debian image.
 
 In this experiments, the experimentation script have been modified to make 50 tests for every size.
