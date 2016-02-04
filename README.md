@@ -5,3 +5,5 @@ This small project aims at teaching 2nd year master students how to
 improve their experimental methodology.
 
 The [journal](journal.org) contains all information and experimental reports.
+
+The [student journal](student.org) contains all the student work.

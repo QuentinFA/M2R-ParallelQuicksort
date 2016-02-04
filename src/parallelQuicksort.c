@@ -37,7 +37,7 @@ struct thread_data {
   int high;
   int level;
 };
-//thread_data should be thread-safe, since while lyst is 
+//thread_data should be thread-safe, since while lyst is
 //shared, [low, high] will not overlap among threads.
 
 //for the builtin qsort, for fun:
@@ -169,7 +169,7 @@ int partition(double lyst[], int lo, int hi)
 
 /*
 parallel quicksort top level:
-instantiate parallelQuicksortHelper thread, and that's 
+instantiate parallelQuicksortHelper thread, and that's
 basically it.
 */
 void parallelQuicksort(double lyst[], int size, int tlevel)
@@ -211,8 +211,8 @@ void parallelQuicksort(double lyst[], int size, int tlevel)
 
 /*
 parallelQuicksortHelper
--if the level is still > 0, then partition and make 
-parallelQuicksortHelper threads to solve the left and 
+-if the level is still > 0, then partition and make
+parallelQuicksortHelper threads to solve the left and
 right-hand sides, then quit. Otherwise, call sequential.
 */
 void *parallelQuicksortHelper(void *threadarg)
@@ -240,7 +240,7 @@ void *parallelQuicksortHelper(void *threadarg)
   //Now we partition our part of the lyst.
   mid = partition(my_data->lyst, my_data->low, my_data->high);
 
-  //At this point, we will create threads for the 
+  //At this point, we will create threads for the
   //left and right sides.  Must create their data args.
   struct thread_data thread_data_array[2];
 

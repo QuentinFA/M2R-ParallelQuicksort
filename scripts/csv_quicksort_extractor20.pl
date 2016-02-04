@@ -4,7 +4,7 @@ use strict;
 my($line);
 my($size);
 my($seq,$par,$libc);
-print "Size, Seq, Par, Libc\n" ;
+print "Size, Type, Time\n" ;
 while($line=<>) {
     chomp $line;
     if($line =~/^Size: ([\d\.]*)$/) {
@@ -12,14 +12,12 @@ while($line=<>) {
         next;
     }
     if($line =~/^Sequential quicksort.*: ([\d\.]*) sec.$/) {
-        $seq=$1; next;
+        print "$size, seq, $1\n"; next;
     }
     if($line =~/^Parallel quicksort.*: ([\d\.]*) sec.$/) {
-        $par=$1; next;
+        print "$size, par, $1\n"; next;
     }
     if($line =~/^Built-in quicksort.*: ([\d\.]*) sec.$/) {
-        $libc=$1;
-        print "$size, $seq, $par, $libc\n";
-        next;
+        print "$size, bin, $1\n"; next;
     }
 }
