@@ -5,7 +5,7 @@
 Note : Docker is a software for "light" virtualization. [More information](https://www.docker.com/what-docker)
 For all the following experiments, Docker is used with a standard Debian image.
 
-In this experiments, the experimentation script have been modified to make 50 tests for every size.
+In this experiments, the experimentation script have been modified to make 50 tests for every size. The computer was not used while the experiments. The results, separated by execution mode (Built-in, Sequential and Parallel), are the following.
 
 For the native execution :
 
@@ -19,3 +19,10 @@ Comparison :
 [[file:cr/mix_type.png]]
 
 The comparison shows that the Docker execution may be as fast as the native execution in Built-in mode, but is slower for the other modes. To check this hypothesis, we need to look at the confidence interval.
+
+TODO
+
+Let's try to make a linear model !
+[[file:cr/mix_lm.png]]
+
+In the parallel execution in Docker, two points seem to be very far from the linear model.
