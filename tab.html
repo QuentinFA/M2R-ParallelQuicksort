@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+   <head>
+   <body>
+      <table border>
+         <caption>sum_mix</caption>
+         <thead>
+            <tr>
+               <th>Size</th>
+               <th>Type</th>
+               <th>Method</th>
+               <th>num</th>
+               <th>mean</th>
+               <th>sd</th>
+               <th>se</th>
+            </tr>
+         </thead>
+         <tbody>
+         <tr> <td rowspan="6">100  </td><td rowspan="2">bin</td>  <td>docker</td>  <td>50</td> <td>0.00001510</td> <td>9.649469e-06</td> <td>2.729282e-06</td></tr>
+         <tr> <td>native </td> <td>50</td> <td>0.00002248</td> <td>4.509582e-06</td> <td>1.275502e-06</td></tr>
+         <tr><td rowspan="2"> par</td>  <td>docker</td>  <td>50 </td><td>0.00618934</td> <td>7.651122e-04</td> <td>2.164064e-04</td></tr>
+         <tr><td>native</td>  <td>50 </td><td>0.00373832</td> <td>4.559499e-04</td> <td>1.289621e-04</td></tr>
+         <tr><td rowspan="2"> seq</td>  <td>docker</td>  <td>50 </td><td>0.00002710</td> <td>7.363707e-05</td> <td>2.082771e-05</td></tr>
+         <tr><td>native</td>  <td>50 </td><td>0.00001104</td> <td>1.159873e-06</td> <td>3.280617e-07</td></tr>
+         <tr><td rowspan="6">1000</td><td rowspan="2">bin</td><td>docker</td><td>50</td><td>0.00031620</td><td>1.047775e-04</td><td>2.963556e-05</td></tr>
+         <tr><td>native</td><td>50</td><td>0.00016118</td><td>1.177976e-05</td><td>3.331821e-06</td></tr>
+         <tr><td rowspan="2">par</td><td>docker</td><td>50</td><td>0.01824742</td><td>5.953864e-03</td><td>1.684007e-03</td></tr>
+         <tr><td>native</td><td>50</td><td>0.02621018</td><td>3.694130e-03</td><td>1.044858e-03</td></tr>
+         <tr><td rowspan="2">seq</td><td>docker</td><td>50</td><td>0.00021672</td><td>9.105550e-05</td><td>2.575438e-05</td></tr>
+         <tr><td>native</td><td>50</td><td>0.00014572</td><td>2.072762e-05</td><td>5.862657e-06</td></tr>
+         <tr><td rowspan="6">10000</td><td rowspan="2">bin</td><td>docker</td><td>50</td><td>0.00209222</td><td>4.735125e-04</td><td>1.339295e-04</td></tr>
+         <tr><td>native</td><td>50</td><td>0.00182352</td><td>9.607783e-05</td><td>2.717491e-05</td></tr>
+         <tr><td rowspan="2">par</td><td>docker</td><td>50</td><td>0.09652316</td><td>1.296667e-01</td><td>3.667527e-02</td></tr>
+         <tr><td>native</td><td>50</td><td>0.10119162</td><td>2.732338e-02</td><td>7.728219e-03</td></tr>
+         <tr><td rowspan="2">seq</td><td>docker</td><td>50</td><td>0.00244644</td><td>4.956945e-04</td><td>1.402036e-04</td></tr>
+         <tr><td>native</td><td>50</td><td>0.00255846</td><td>6.162990e-04</td><td>1.743157e-04</td></tr>
+         <tr><td rowspan="6">100000</td><td rowspan="2">bin</td><td>docker</td><td>50</td><td>0.02467478</td><td>2.351492e-03</td><td>6.651023e-04</td></tr>
+         <tr><td>native</td><td>50</td><td>0.02891134</td><td>4.139795e-03</td><td>1.170911e-03</td></tr>
+         <tr><td rowspan="2">par</td><td>docker</td><td>50</td><td>0.11251648</td><td>6.916040e-02</td><td>1.956152e-02</td></tr>
+         <tr><td>native</td><td>50</td><td>0.15734652</td><td>5.373870e-02</td><td>1.519960e-02</td></tr>
+         <tr><td rowspan="2">seq</td><td>docker</td><td>50</td><td>0.02602804</td><td>2.801604e-03</td><td>7.924133e-04</td></tr>
+         <tr><td>native</td><td>50</td><td>0.02678854</td><td>4.950927e-03</td><td>1.400334e-03</td></tr>
+         <tr><td rowspan="6">1000000</td><td rowspan="2">bin</td><td>docker</td><td>50</td><td>0.29659362</td><td>1.191112e-02</td><td>3.368973e-03</td></tr>
+         <tr><td>native</td><td>50</td><td>0.30606470</td><td>2.554095e-02</td><td>7.224071e-03</td></tr>
+         <tr><td rowspan="2">par</td><td>docker</td><td>50</td><td>0.39545262</td><td>4.515107e-02</td><td>1.277065e-02</td></tr>
+         <tr><td>native</td><td>50</td><td>0.17922150</td><td>2.913583e-02</td><td>8.240857e-03</td></tr>
+         <tr><td rowspan="2">seq</td><td>docker</td><td>50</td><td>0.30343210</td><td>1.365433e-02</td><td>3.862028e-03</td></tr>
+         <tr><td>native</td><td>50</td><td>0.26761050</td><td>6.659666e-03</td><td>1.883638e-03</td></tr>
+         </tbody>
+      </table>
+   </body>
+<html>
