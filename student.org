@@ -26,6 +26,7 @@ d_mix = ddply(mix, c("Size", "Type", "Method"))
 #+end_src
 
 A quick data summary (sum_mix) :
+
 [[file:cr/tab.png]]
 
 For the native execution :
