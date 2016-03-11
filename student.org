@@ -62,4 +62,4 @@ ggplot(data = d_mix, aes(x=Size, y=Time, color=factor(Method))) + geom_point() +
 #+end_src
 [[file:cr/mix_lm.png]]
 
-In parallel execution mode, the Docker execution looks slower than the native one. About the others execution mode, no conclusion can be made.
+In parallel execution mode, the Docker execution looks slower than the native one. For the sequential mode, the Docker execution is a bit slower than the native one with a very big amount of data. Finally, for the built in mode, no conclusion can be made : the linears approximation of the two execution mode are very close, and the confidences interval are overlaping.
